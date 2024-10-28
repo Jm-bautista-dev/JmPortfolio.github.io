@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="portfolio.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <a href="portfolio.html" class="logo">Jm</a>
+        <nav id="navbar">
+            <a href="portfolio.html">Home</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="skills.html">Skills</a>
+            <a href="Blog.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+    <section class="services">
+        <h1>My Services</h1>
+        <div class="service-container">
+            <div class="service-box">
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Building responsive and functional websites.</p>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-paint-brush"></i>
+                <h2>Web Design</h2>
+                <p>Creating visually appealing and user-friendly designs.</p>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-headset"></i>
+                <h2>Virtual Assistant</h2>
+                <p>Providing administrative support and managing tasks efficiently.</p>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-pen"></i>
+                <h2>Content Writing</h2>
+                <p>Writing engaging and informative content.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('navbar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

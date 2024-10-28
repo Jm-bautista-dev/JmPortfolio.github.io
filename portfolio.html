@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="portfolio.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <a href="#" class="logo">Jm</a>
+        <nav id="navbar">
+            <a href="portfolio.html" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">Skills</a>
+            <a href="Blog.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, it's <span>Jm</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>
+                Hi everyone! My name is Jhon Michael Bautista. I'm a web developer from the Philippines, Cavite. I'm a college student taking a Bachelor of Science in Information Technology. I really enjoy what I do right now. For me, creating programs is not just a job but also an art that has aesthetic value.<br><br>
+                My job is to build your website to be functional and user-friendly yet still attractive. In addition, I provide a personal touch to your product and ensure that the website catches attention and is easy to use. My goal is to convey your message and identity in the most creative way. If you are interested in hiring me, please click the HIRE ME button.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/jm-bautista-842787329/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Jm-bautista-dev"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/ohshksk"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/michel_laurentt/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="contact.html" class="btn">Hire me</a>
+        </div>
+    </section>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('navbar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

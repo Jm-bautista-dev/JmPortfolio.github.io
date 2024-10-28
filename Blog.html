@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="portfolio.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <a href="portfolio.html" class="logo">Jm</a>
+        <nav id="navbar">
+            <a href="portfolio.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">Skills</a>
+            <a href="blog.html" class="active">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+    <section class="portfolio">
+        <h1>My Projects</h1>
+        <div class="project-container">
+            <!-- Sample Project -->
+            <div class="project-box">
+                <img src="main.jpg" alt="Project 1">
+                <h2>Project Title</h2>
+                <p>Brief description of the project.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="project-box">
+                <img src="main.jpg" alt="Project 1">
+                <h2>Project Title</h2>
+                <p>Brief description of the project.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="project-box">
+                <img src="main.jpg" alt="Project 1">
+                <h2>Project Title</h2>
+                <p>Brief description of the project.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="project-box">
+                <img src="main.jpg" alt="Project 1">
+                <h2>Project Title</h2>
+                <p>Brief description of the project.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+    <section class="certifications">
+        <h1>Certifications</h1>
+        <div class="certification-container">
+            <!-- Sample Certification -->
+            <div class="certification-box">
+                <img src="main.jpg" alt="Certification 1">
+                <h2>Certification Title</h2>
+                <p>Brief description of the certification.</p>
+            </div>
+            <!-- Add more certifications as needed -->
+        </div>
+    </section>
+    <section class="testimonials">
+        <h1>Testimonials</h1>
+        <div class="testimonial-container">
+            <!-- Sample Testimonial -->
+            <div class="testimonial-box">
+                <p>"This is a testimonial from a satisfied client."</p>
+                <h3>- Client Name</h3>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+    </section>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('navbar').classList.toggle('active');
+        });
+
+        // Initialize particles.js
+        particlesJS("particles-js", particlesConfig);
+    </script>
+</body>
+</html>
